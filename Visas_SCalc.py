@@ -146,7 +146,7 @@ for (label, days), tab in zip(validities.items(), tabs):
             # Styling the dataframe to highlight the Manual trip
             st.dataframe(
                 df, 
-                use_container_width=True, 
+                width='stretch', 
                 hide_index=True,
                 column_config={
                     "Type": st.column_config.TextColumn("Trip Type"),
